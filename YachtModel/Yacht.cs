@@ -11,7 +11,7 @@ namespace ConsoleApp8
         public string Country { get; set; }
         public string View { get; set; }
         public string Size { get; set; }
-
+        // sd
         public string GetInfo()
         {
             if
