@@ -11,9 +11,11 @@ namespace YachtModel
     internal class Program
     {
         internal static List<Yacht> Yachts { get; set; }
-        private static string Country { get; set; }
         private static string Title { get; set; }
-        private static int Key { get; set; }
+        private static string Country { get; set; }
+        private static string View { get; set; }
+        private static string Size { get; set; }
+        private static int Accomplishment { get; set; }
         private static int Action { get; set; }
 
         static void Main()
@@ -33,12 +35,12 @@ namespace YachtModel
 
             }
             // Регистрация
-            while (Key != 2)
+            while (Accomplishment != 2)
             {
                 Console.WriteLine("Registration (1) | Cancel (2)");
                 Message("Enter the command: ", ConsoleColor.Yellow);
-                Key = int.Parse(Console.ReadLine());
-                if (Key == 1)
+                Accomplishment = int.Parse(Console.ReadLine());
+                if (Accomplishment == 1)
                 {
                     Console.WriteLine("Registration");
                     Message("Title: ", ConsoleColor.Blue);
